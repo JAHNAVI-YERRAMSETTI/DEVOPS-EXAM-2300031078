@@ -27,7 +27,7 @@ services:
     image: jahnavi829/2300031078-exam-frontend:latest
     container_name: reactexam
     ports:
-      - "3001:80"
+      - "3002:80"
     depends_on:
       - backend
     restart: on-failure
