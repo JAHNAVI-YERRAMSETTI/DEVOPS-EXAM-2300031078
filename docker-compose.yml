@@ -1,7 +1,7 @@
 services:
   mysqldb:
     image: mysql:8
-    container_name: mysqldb
+    container_name: mysqldbexam
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: examdb205
@@ -14,7 +14,7 @@ services:
 
   backend:
     image: jahnavi829/2300031078-exam-backend:latest
-    container_name: springboot
+    container_name: springbootexam
     ports:
       - "2025:2000"
     depends_on:
@@ -25,7 +25,7 @@ services:
 
   frontend:
     image: jahnavi829/2300031078-exam-frontend:latest
-    container_name: react
+    container_name: reactexam
     ports:
       - "3001:80"
     depends_on:
